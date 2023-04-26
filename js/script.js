@@ -1,3 +1,11 @@
+//*-------------------------------------- Selecting the element from DOM --------------------
+let searchBar = document.getElementById("search-bar");
+let searchResults = document.getElementById("search-results");
+
+// Adding eventListener to search bar
+searchBar.addEventListener("input", () => searchHeros(searchBar.value));
+
+
 async function searchHeros(textSearched) {
 
     let PUBLIC_KEY = "ad5e51c27bbb0a2dde347af8c006720f";
