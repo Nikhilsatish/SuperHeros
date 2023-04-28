@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Superhero - favorites</title>
-</head>
-<body>
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/favorites.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="flex-row navbar">
+      <!-- Site Icon and Name -->
+      <div class="flex-row navbar-brand">
+        <img class="logo" src="./images/mask.jpg" alt="" />
+        <a href="./index.html">
+          <span>Superheros</span>
+        </a>
+      </div>
+      <!-- Theme Button and Favourites Button -->
+      <div class="flex-row favAndTheme-btn">
+        <a class="flex-row link-to-different-page" href="./index.html">
+          <button class="btn fav-btn">
+            <i class="fa-solid fa-house"></i> &nbsp; Home
+          </button>
+        </a>
+      </div>
+    </nav>
     <div class="favourite-characters">
-        <div class="flex-row cards-container" id="container">
-             <!-- Structure of the data that is added using DOM manipulation -->
-             <!-- <div class="flex-col card">
+      <div class="flex-row cards-container" id="container">
+        <!-- Structure of the data that is added using DOM manipulation -->
+        <!-- <div class="flex-col card">
                   <img src="${character.squareImage}" alt="">
                   <span class="name">${character.name}</span>
                   <span class="id">Id : ${character.id}</span>
@@ -33,13 +64,13 @@
                   </div>
                   <button class="btn remove-btn"><i class="fa-solid fa-heart-circle-minus"></i> &nbsp; Remove from Favourites</button>
              </div> -->
-        </div>
-   </div>
+      </div>
+    </div>
 
-   <span data-visiblity="hide" class="remove-toast">Removed from Favourites</span>
+    <span data-visiblity="hide" class="remove-toast"
+      >Removed from Favourites</span
+    >
 
-
-   <script src="./js/favorites.js"></script>
-
-</body>
+    <script src="./js/favorites.js"></script>
+  </body>
 </html>

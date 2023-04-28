@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Superhero Hunter JS</title>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Crypto JS -->
      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
           integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
@@ -12,6 +21,23 @@
      </script>
 </head>
 <body>
+<!-- Navbar -->
+<nav class="flex-row navbar">
+     <!-- Site Icon and Name -->
+     <div class="flex-row navbar-brand">
+          <img class="logo" src="./images/mask.jpg" alt="">
+          <a href="./index.html">
+               <span>Superheros</span>
+          </a>
+     </div>
+     <!-- Theme Button and Favourites Button -->
+     <div class="flex-row favAndTheme-btn">
+          <a class="flex-row link-to-different-page" href="./favorites.html">
+               <button class="btn fav-btn"> <i class="fa-solid fa-heart fav-icon"></i> &nbsp; Favourites</button>
+          </a>
+     </div>
+</nav>
+
     <!-- Search Bar and Search Results -->
     <div class="flex-col searchBar-items">
         <div class="search-bar-container" class="flex-row">
